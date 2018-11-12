@@ -1,0 +1,130 @@
+body {
+    min-width: 1100px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    /*  Пример подключения изображения из папки  img */
+    background-image: url("../img/bg-promo.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.main-header {
+    padding-top: 35px;
+    padding-bottom: 80px;
+}
+.container {
+    width: 1080px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.header-top {
+    margin-bottom: 100px;
+}
+.header-top::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.logo {
+    min-height: 85px;
+    width: 180px;
+    float: left;
+}
+.logo img {
+    display: block;
+}
+
+.main-menu {
+    float: right;
+    margin-top: 30px;
+    width: 670px;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu li {
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: top;
+    
+}
+.main-menu li:last-child {
+    margin-right: 0;
+}
+
+.gl1, .gl2, .gl3, .gl, .gl5, .gl6 {
+    position:  relative;    
+}
+.gl1::before, .gl2::before, .gl3::before, .gl::before, .gl5::before, .gl6::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 20px;
+    padding: 2px 5px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "courier New", monotype;
+    font-weight: bold;
+    z-index: 10;
+    color: #ffffff;
+    }
+.gl1 {
+   box-shadow: inset 0 0 0 2px #004ac8;
+    background-color: rgba(0, 130, 200, 0.3);
+    
+}
+.gl1::before {
+    background-color: #004ac8;  
+}
+
+.gl2 {
+    box-shadow: 0 0 0 2px #00C818;
+    background-color: rgba(0, 200, 24, 0.3);
+}
+
+.gl2::before {
+    background-color: #00C818;
+}
+
+.gl3 {
+    box-shadow: 0 0 0 2px #E53DF0;
+    background-color: rgba(229, 61, 240, 0.3);
+}
+.gl3::before {
+    background-color: #E53DF0;
+}
+.gl4 {
+   box-shadow: 0 0 0 2px #3DF0EB;
+background-color: rgba(61, 240, 235, 0.3);
+}
+.gl4::before {
+    background-color: #3DF0EB;
+}
+.main-header::before {
+    content: ".main-header";
+ }
+.container::before {
+  content: ".container";    
+}
+.header-top::before {
+     content: ".header-top";
+}
+.promo::before{
+    content: "promo";
+}
+.logo::before {
+    content: "logo";
+    }
+.main-menu::before {
+    content: "main-menu";
+}
